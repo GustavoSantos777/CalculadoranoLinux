@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main (int arc, char *argv){
+int main (int arc, char *argv[]){
 	int operacao;
 	int opcao;
 
@@ -11,15 +11,15 @@ int main (int arc, char *argv){
 
     opcao=1;
     while(opcao==1){
-    printf("Digite 1 para Adicao");
-    printf("Digite 2 para Subtracao");
-    printf ("Digite 3 para Multiplicacao");
-    printf("Digite 4 para Divisao");
+    printf("Digite 1 para Adicao\n");
+    printf("Digite 2 para Subtracao\n");
+    printf ("Digite 3 para Multiplicacao\n");
+    printf("Digite 4 para Divisao\n");
     scanf("%d", &operacao);
     
-    printf("Escolha um numero");
+    printf("Escolha um numero:");
     scanf("%f", &numero1);
-    printf("Escolha outro numero");
+    printf("Escolha outro numero:");
     scanf("%f", &numero2);
     
     switch(operacao) {
@@ -39,9 +39,8 @@ int main (int arc, char *argv){
     total = numero1 / numero2;
     break;
 
-    scanf("%f", total);
  }     
-    printf("O resultado da sua operacao e:%.2f");
+    printf("O resultado da sua operacao e:%.2f\n",total);
     printf("Digite 1 para continuar ou Digite 0 para sair");
     scanf("%d", &opcao);
   }
