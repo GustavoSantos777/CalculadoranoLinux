@@ -14,16 +14,16 @@
 		return totalsub;
 	}
 	
-		float divisao(float div1, float div2){
-		float totaldiv;
-		totaldiv = div1 * div2;
-		return totaldiv;
-	}
-	
 		float multiplicacao(float mult1, float mult2){
 		float totalmult;
-		totalmult = mult1 / mult2;
+		totalmult = mult1 * mult2;
 		return totalmult;
+	}
+	
+		float divisao(float div1, float div2){
+		float totaldiv;
+		totaldiv = div1 / div2;
+		return totaldiv;
 	}
 	
 	

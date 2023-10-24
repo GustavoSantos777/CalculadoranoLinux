@@ -37,12 +37,18 @@ void main(){
     break;
 
     case 4:
+    while(numero2==0){
+	    printf("Não é possivel dividir por 0;\n");
+	    printf("Digite um numero novamente:");
+	    scanf("%f", &numero2);
+    }
+
     total =  divisao(numero1, numero2);
     break;
 
  }     
     printf("O resultado da sua operacao e:%.2f\n",total);
-    printf("Digite 1 para continuar ou Digite 0 para sair");
+    printf("Digite 1 para continuar ou Digite 0 para sair: \n");
     scanf("%d", &opcao);
   }
 
